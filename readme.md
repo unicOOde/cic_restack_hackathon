@@ -24,18 +24,20 @@ Ollama is a program that runs in the background, designed to facilitate various 
 
 1. **Download and Install Python**:
    Download the executable installation file for [Python 3.11](https://python.org/) and install Python.
-2. **Start PowerShell in Windows**:
-   Open PowerShell from the Start menu or by pressing `Win + X` and selecting PowerShell.
-3. **Create a new Python environment**:
-   ```powershell
-   python -m venv llama_chat --python=python3.11
-4. **Activate your environment**:
-   ```powershell
-   .\llama_chat\Scripts\activate
-5. **Install requirements**:
+2. **Open File Explorer**
+   Open File Explorer and go into directory
+3. **Start Terminal in Windows**:
+   Open Terminal by typing cmd in adress bar.
+4. **Create a new Python environment**:
+   ```cmd
+   "C:\Users\nicol\AppData\Local\Programs\Python\Python311\python.exe" -m venv venv
+5. **Activate your environment**:
+   ```cmd
+   .\venv\Scripts\activate
+6. **Install requirements**:
    Ensure you have a requirements.txt file in your project directory and run:
-   ```powershell
+   ```cmd
    pip install -r requirements.txt
-6. **Run the Streamlit application**:
-   ```powershell
+7. **Run the Streamlit application**:
+   ```cmd
    streamlit run llama_chat.py
